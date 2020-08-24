@@ -1,0 +1,21 @@
+{
+    "name": "sribna/licensee",
+    "description": "Client for sribna/licensor",
+    "license": "MIT",
+    "homepage": "https://github.com/sribna/licensee",
+    "require": {
+        "php": "^7.0",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "~6|~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sribna\\Licensee\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sribna\\Licensee\\Tests\\": "tests"
+        }
+    }
+}
