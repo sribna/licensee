@@ -1,12 +1,12 @@
 # Obtaining a private key
 
-In response to activation and verification requests, the licensor sends a new private key to the URL
-`<public key domain>/key/callback`. You can change the `key/callback` path according to the requirements of the application,
-but you cannot change the domain as it is defined by the public key.
+In response to activation and verification requests, the licensor sends a new private key to the
+`<public key domain>/key/callback` URL. You can change this path according to the application requirements,
+but you cannot change the domain as it's defined by the public key.
 
-    Sribna\Licensee\Checker::setCallbackUrlPath('another/key/callback/path');
+    Sribna\Licensee\Checker::setCallbackUrlPath('another/callback/path');
     
-The path will be passed to the licensor in the request header.
+The `another/callback/path` path will be passed to the licensor in the request header.
 
 ## Private key callback handler
 

@@ -5,6 +5,7 @@ Make sure that:
 2. [Secret](SettingSecret.md) is already exists in the `Sribna\Licensee\Checker` class
 
 
+
     use Sribna\Licensee\Checker;
     
     $checker = new Checker();

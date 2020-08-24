@@ -1,6 +1,6 @@
 # Licensee
 
-Framework agnostic license checker for protecting PHP scripts. Originally designed to work with [sribna/licensor](https://github.com/sribna/licensor)
+The framework agnostic license checker for protecting PHP scripts. Originally designed to work with [sribna/licensor](https://github.com/sribna/licensor)
 
 ## Installation
 

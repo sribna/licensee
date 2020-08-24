@@ -1,8 +1,7 @@
 # Code protection
 
-Code protection comes down to including `Sribna\Licensee\Checker::check()` in critical parts of your application.
-These are usually public routes. Keep in mind that the app administrator will need to have access
-to the key administration pages.
+To protect some parts of your app simply call `Sribna\Licensee\Checker::check()` there.
+Keep in mind that the app administrator will need to have access to the key administration pages.
 
     use Sribna\Licensee\Checker;
     
@@ -16,5 +15,5 @@ to the key administration pages.
           }
     }
     
-In this case, each time the `FrontController` class is instantiated, the private key will be checked.
-Of course, the class must be encoded in IonCube or similar encoder to prevent checker removal.
+In this case, we check the private key each time the `FrontController` class is instantiated.
+Of course, the class must be encoded in IonCube or similar encoder to prevent removing the checker.
