@@ -1,6 +1,6 @@
 {
     "name": "sribna/licensee",
-    "description": "Client for sribna/licensor",
+    "description": "License checker. Client for sribna/licensor",
     "license": "MIT",
     "homepage": "https://github.com/sribna/licensee",
     "require": {
