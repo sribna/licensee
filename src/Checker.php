@@ -136,7 +136,7 @@ final class Checker
      * Shutdown the app
      * @param Throwable $exception
      */
-    protected function shutdown(Throwable $exception)
+    private function shutdown(Throwable $exception)
     {
         if ($this->isShutdownException($exception)) {
             try {
