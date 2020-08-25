@@ -353,7 +353,7 @@ final class Checker
      */
     private function getRequestUrl(string $domain, string $type): string
     {
-        return "http://$domain/" . $this->${"{$type}UrlPath"};
+        return "http://$domain/" . call_user_func([$this, "get{$type}UrlPath"]);
     }
 
     /**
@@ -565,7 +565,7 @@ final class Checker
             return self::$secret;
         }
 
-        throw new LicenseException('Secret is not set. Run Sribna\Licensee\Checker::writeSecret()');
+        throw new LicenseException('Secret is not set');
     }
 
     /**

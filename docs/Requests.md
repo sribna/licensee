@@ -25,7 +25,7 @@ Make sure that domains for activation and verification are set:
 **Success response:**
 
     Code: 200
-    Content: {"success" : "Callback URL where private key was sent"}
+    Content: {"success" : "Callback URL path where private key was sent"}
     
 **Error response:**
 
@@ -43,7 +43,7 @@ Make sure that domains for activation and verification are set:
 **Success response:**
 
     Code: 200
-    Content: {"success" : "Callback URL where private key was sent"}
+    Content: {"success" : "Callback URL path where private key was sent"}
     
 **Error response:**
 
