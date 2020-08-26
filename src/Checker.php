@@ -286,7 +286,7 @@ final class Checker
      */
     public function getToken(): string
     {
-        return md5($this->hashRequest());
+        return md5($this->getSecret() . $this->getKey());
     }
 
     /**
